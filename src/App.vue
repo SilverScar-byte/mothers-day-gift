@@ -80,7 +80,7 @@ const openSound = new Audio("/sounds/open.mp3");
 // background music
 const bgMusic = new Audio("/music/warm-memories.mp3");
 bgMusic.loop = true;
-bgMusic.volume = 1;
+bgMusic.volume = 2;
 
 function openEnvelope() {
   openSound.currentTime = 0;
