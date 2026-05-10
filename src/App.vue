@@ -74,27 +74,36 @@ import { ref } from "vue";
 
 const opened = ref(false);
 
-// sound effects
-const openSound = new Audio("/sounds/open.mp3");
+let openSound;
+let bgMusic;
 
-// background music
-const bgMusic = new Audio("/music/warm-memories.mp3");
-bgMusic.loop = true;
-bgMusic.volume = 2;
+if (typeof window !== "undefined") {
+  openSound = new Audio("/sounds/open.mp3");
+
+  bgMusic = new Audio("/music/warm-memories.mp3");
+  bgMusic.loop = true;
+  bgMusic.volume = 1;
+}
 
 function openEnvelope() {
-  openSound.currentTime = 0;
-  openSound.play();
+  if (openSound) {
+    openSound.currentTime = 0;
+    openSound.play().catch(() => {});
+  }
 
-  bgMusic.currentTime = 0;
-  bgMusic.play();
+  if (bgMusic) {
+    bgMusic.currentTime = 0;
+    bgMusic.play().catch(() => {});
+  }
 
   opened.value = true;
 }
 
 function closeLetter() {
-  bgMusic.pause();
-  bgMusic.currentTime = 0;
+  if (bgMusic) {
+    bgMusic.pause();
+    bgMusic.currentTime = 0;
+  }
 
   opened.value = false;
 }
