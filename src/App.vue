@@ -243,4 +243,55 @@ function closeLetter() {
     opacity: 1;
   }
 }
+
+/* 📱 MOBILE RESPONSIVE FIX */
+@media (max-width: 768px) {
+
+  /* Greeting */
+  .greeting {
+    top: 40px;
+    right: 20px;
+    width: 220px;
+  }
+
+  /* Envelope */
+  .envelope {
+    width: 85vw;
+  }
+
+  /* Letter container */
+  .letter-container {
+    width: 95vw;
+  }
+
+  /* Letter text */
+  .letter-text {
+    width: 70%;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  /* Flowers scale down */
+  .f1 {
+    width: 220px;
+    left: 5%;
+    bottom: 3%;
+  }
+
+  .f2 {
+    width: 220px;
+  }
+
+  .f3 {
+    width: 180px;
+    right: 2%;
+    bottom: 2%;
+  }
+
+  /* Back button smaller */
+  .back-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
 </style>
