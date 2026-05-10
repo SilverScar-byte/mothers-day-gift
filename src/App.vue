@@ -270,11 +270,11 @@ function closeLetter() {
   }
 
   /* Letter text (IMPORTANT FIX) */
-  .letter-text {
-    width: 75%;
-    font-size: 10px;   /* smaller text */
-    line-height: 1.3;
-  }
+.letter-text {
+  width: 75%;
+  font-size: 9px;   /* even smaller for better fit */
+  line-height: 1.15;
+}
 
   /* Reduce paragraph spacing feeling */
   .letter-text p {
