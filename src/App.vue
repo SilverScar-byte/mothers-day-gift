@@ -244,54 +244,68 @@ function closeLetter() {
   }
 }
 
-/* 📱 MOBILE RESPONSIVE FIX */
+
 @media (max-width: 768px) {
+
+  /* APP spacing safety */
+  .app {
+    padding: 10px;
+  }
 
   /* Greeting */
   .greeting {
-    top: 40px;
-    right: 20px;
-    width: 220px;
+    top: 20px;
+    right: 10px;
+    width: 160px;
   }
 
   /* Envelope */
   .envelope {
-    width: 85vw;
+    width: 70vw;
   }
 
   /* Letter container */
   .letter-container {
-    width: 95vw;
+    width: 98vw;
   }
 
-  /* Letter text */
+  /* Letter text (IMPORTANT FIX) */
   .letter-text {
-    width: 70%;
-    font-size: 12px;
-    line-height: 1.5;
+    width: 75%;
+    font-size: 10px;   /* smaller text */
+    line-height: 1.3;
   }
 
-  /* Flowers scale down */
+  /* Reduce paragraph spacing feeling */
+  .letter-text p {
+    margin: 6px 0;
+  }
+
+  /* Flowers (scaled down a lot) */
   .f1 {
-    width: 220px;
+    width: 140px;
     left: 5%;
     bottom: 3%;
   }
 
   .f2 {
-    width: 220px;
+    width: 140px;
+    top: 2%;
+    left: 2%;
   }
 
   .f3 {
-    width: 180px;
+    width: 120px;
     right: 2%;
     bottom: 2%;
   }
 
-  /* Back button smaller */
+  /* Back button */
   .back-btn {
-    font-size: 12px;
-    padding: 6px 10px;
+    font-size: 11px;
+    padding: 5px 8px;
+    top: 10px;
+    left: 10px;
   }
 }
 </style>
