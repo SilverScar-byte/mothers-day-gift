@@ -280,8 +280,8 @@ function closeLetter() {
 
   /* Letter text (IMPORTANT FIX) */
   .letter-text {
-    width: 30%;
-    font-size: 10px;   /* smaller text */
+    width: 40%;
+    font-size: 9px;   /* smaller text */
     line-height: 1.15;
   }
 
